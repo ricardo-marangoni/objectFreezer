@@ -20,6 +20,7 @@ class IndexControllerTest extends Zend_Test_PHPUnit_ControllerTestCase
         $this->assertModule($urlParams['module']);
         $this->assertController($urlParams['controller']);
         $this->assertAction($urlParams['action']);
+        $this->assertTrue(false);
         $this->assertQueryContentContains("div#welcome h3", "This is your project's main page");
     }
 
